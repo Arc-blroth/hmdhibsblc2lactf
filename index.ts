@@ -1,7 +1,7 @@
 import { serve } from "https://deno.land/std@0.173.0/http/server.ts";
 
 const port = Number(Deno.env.get("PORT")) || 8080;
-const token = (await Deno.readTextFile(".token")).trim();
+const token = (Deno.env.get("TOKEN") || await Deno.readTextFile(".token")).trim();
 
 if (token.length == 0) {
   throw "Github API token required!";
