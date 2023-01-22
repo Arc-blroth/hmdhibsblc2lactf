@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffba44">
+        <title>How many days has it been since @bliutech commited to uclaacm/lactf-challenges-2023?</title>
+        <style>
+            html, body {
+                width: 100%;
+                height: 100%;
+                padding: 0px;
+                margin: 0px;
+            }
+
+            body {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            body > div {
+                display: flex;
+                flex-direction: column;
+                height: min-content;
+                align-items: center;
+                /* Intentionally off-center the div to make it look better */
+                transform: translateY(-2vh);
+            }
+
+            h2, h1, p {
+                font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Noto Sans", "Oxygen", "Ubuntu", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+            }
+
+            h2 {
+                font-size: 4vw;
+                margin: 0;
+            }
+
+            h1 {
+                font-size: 10vw;
+                margin: 5vh 0px 10vh 0px;
+            }
+
+            p {
+                font-size: 2vw;
+                margin: 0;
+            }
+
+            @media (prefers-color-scheme: dark) {
+                html, body, body > div {
+                    background-color: #181821;
+                }
+
+                h2, h1, p, a {
+                    color: aliceblue;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <h2>It has been</h2>
+            <h1><span id="days" />{DAYS} Days</h1>
+            <p>since @<a href="https://github.com/bliutech">bliutech</a> last commited to uclaacm/lactf-challenges-2023.</p>
+        </div>
+    </body>
+</html>
