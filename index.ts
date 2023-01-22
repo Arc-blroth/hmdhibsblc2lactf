@@ -52,7 +52,7 @@ const handler = async (_request: Request): Promise<Response> => {
   ) {
     lastOctoCache = { value: await getLastCommit(now), timestamp: now };
   }
-  const body = index.replace("{DAYS}", lastOctoCache.value);
+  const body = index.replaceAll("{DAYS}", lastOctoCache.value);
   return new Response(body, {
     status: 200,
     headers: [["Content-Type", "text/html; charset=utf-8"]],
